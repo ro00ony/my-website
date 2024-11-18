@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Jexi">
+        <meta name="keywords" content="HTML,CSS,JavaScript">
+        <meta name="author" content="HiBootstrap">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <title>Jexi - Online Coaching & Education Training HTML Template</title>
+        <link rel="icon" href="assets/images/tab-3.png" type="image/png" sizes="16x16">
+
+    
+        <!-- bootstrap css -->
+        <link rel="stylesheet" href="assets/css/bootstrap-reboot.min.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css" type="text/css" media="all" />
+        <!-- animate css -->
+        <link rel="stylesheet" href="assets/css/animate.min.css" type="text/css" media="all" />
+        <!-- swiper css -->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css"  type="text/css" media="all" />
+        <!-- meanmenu css -->
+        <link rel="stylesheet" href="assets/css/meanmenu.min.css" type="text/css" media="all" />
+        <!-- magnific popup css -->
+        <link rel="stylesheet" href="assets/css/magnific-popup.min.css" type="text/css" media="all" />
+        <!-- fullcalender css -->
+        <link rel="stylesheet" href="assets/css/main.min.css" type="text/css" media="all" />
+        <!-- boxicons css -->
+        <link rel='stylesheet' href='assets/css/boxicons.min.css' type="text/css" media="all" />
+        <!-- flaticon css -->
+        <link rel='stylesheet' href='assets/css/flaticon.css' type="text/css" media="all" />
+        <!-- revolution slider css -->
+        <link rel='stylesheet' href='assets/css/settings.css' type="text/css" media="all" />
+        <link rel='stylesheet' href='assets/css/layers.css' type="text/css" media="all" />
+        <link rel='stylesheet' href='assets/css/navigation.css' type="text/css" media="all" />
+        <!-- style css -->
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css" media="all" />
+        <!-- responsive css -->
+        <link rel="stylesheet" href="assets/css/responsive.css" type="text/css" media="all" />
+        <!-- nice-select css -->
+        <link rel="stylesheet" href="assets/css/nice-select.css" type="text/css" media="all" />
+        <!-- nice-select css -->
+        <link rel="stylesheet" href="assets/css/nice-select.css" type="text/css" media="all" />
+        <!-- RTL css -->
+        <link rel="stylesheet" href="assets/css/rtl.css" type="text/css" media="all" />
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <!-- preloader -->
+        <div class="preloader bg-grad">
+            <div class="preloader-wrapper">
+                <div class="loader-content book">
+                    <figure class="page"></figure>
+                    <figure class="page"></figure>
+                    <figure class="page"></figure>
+                </div>
+                <h3>Loading</h3>
+            </div>
+        </div>
+        <!-- End preloader -->
+        <!-- navbar -->
+        <div class="navbar-area">
+            <!-- mobile menu -->
+            <div class="mobile-nav">
+                <a href="main.html" class="mobile-brand">
+                    <img src="assets/images/logo.png" alt="logo" class="logo logo1">
+                    <img src="assets/images/logo-3-white.png" alt="logo" class="logo2">
+                </a>
+                <div class="navbar-option">
+                    <div class="nnavbar-option-item navbar-option-settings navbar-option-wishlist navbar-search-box"> 
+                        <button class="dropdown-show" type="button" id="box-search" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="flaticon-search ml-0"></i>
+                        </button>
+                        <div class="dropdown-menu box-search mobile" aria-labelledby="box-search">  
+                            <div class="search-container mobile">
+                                <input type="text" id="search-input" placeholder="التخصص المطلوب دراسته..." class="search-input">
+                                <button class="btn main-btn"><i class="flaticon-search m-0"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navbar-option-item navbar-option-account mr-20">
+                        <a href="#login-popup" class="open-popup"><i class="bx bx-log-in"></i></a>
+                    </div>
+                    <div class="navbar-option-item navbar-option-cart">
+                        <a href="notifications.html"><i class="bx bxs-bell"></i>
+                            <span class="option-badge option-badge-main">2</span>
+                        </a>
+                    </div>
+                    <div class="nnavbar-option-item navbar-option-settings dropdown profile-settings navbar-option-wishlist mr-15"> 
+                        <button class="dropdown-show" type="button" id="account-settings2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="bx bxs-user"></i>
+                        </button>
+                        <div class="dropdown-menu mobile settings-dropdown-menu" aria-labelledby="account-settings2">  
+                            <a class="dropdown-item" href="edit-account.html">
+                                إعدادات حسابى
+                                <i class="bx bxs-user-account"></i>
+                            </a>
+                            <a class="dropdown-item" href="mylearn.html">
+                                تعلمى
+                                <i class="bx bx-book-alt"></i>
+                            </a>
+                            <a class="dropdown-item" href="purchase-history.html">
+                                سجل الشراء
+                                <i class="bx bx-purchase-tag"></i>
+                            </a>
+                            <a class="dropdown-item" href="main.html">
+                                تسجيل الخروج
+                                <i class="bx bx-log-out"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- desktop menu -->
+            <div class="main-nav">
+                <div class="container-fluid">
+                    <nav class="navbar navbar-expand-md navbar-light">
+                        <a class="navbar-brand" href="main.html">
+                            <img src="assets/images/logo.png" alt="logo" class="logo logo1">
+                            <img src="assets/images/logo-3-white.png" alt="logo" class="logo2">
+                        </a>
+                        <div class="navbar-search">
+                            <form>
+                                <div class="input-group exceptional">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <i class="flaticon-search"></i>
+                                        </div>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="التخصص المطلوب دراسته">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="nnavbar-option-item navbar-option-settings navbar-option-wishlist navbar-search-box"> 
+                            <button class="dropdown-show" type="button" id="box-search" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="flaticon-search"></i>
+                            </button>
+                            <div class="dropdown-menu box-search desktop" aria-labelledby="box-search">  
+                                <div class="search-container">
+                                    <input type="text" id="search-input" placeholder="التخصص المطلوب دراسته..." class="search-input">
+                                    <button class="btn main-btn"><i class="flaticon-search m-0"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                            <ul class="navbar-nav mx-auto">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link active">الرئيسية</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="mylearn.html" class="nav-link">تعلمى</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="courses.html" class="nav-link">الدرجات العلمية</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="about-us.html" class="nav-link">من نحن</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="contact-us.html" class="nav-link">تواصل معنا</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="navbar-option">
+                            <div class="navbar-option-item navbar-option-cart">
+                                <a href="notifications.html"><i class="bx bxs-bell"></i>
+                                    <span class="option-badge option-badge-main">2</span>
+                                </a>
+                            </div>
+                            <div class="nnavbar-option-item navbar-option-settings dropdown profile-settings navbar-option-wishlist"> 
+                                <button class="dropdown-show" type="button" id="account-settings" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="bx bxs-user"></i>
+                                </button>
+                                <div class="dropdown-menu settings-dropdown-menu" aria-labelledby="account-settings2">  
+                                    <a class="dropdown-item" href="edit-account.html">
+                                        إعدادات حسابى
+                                        <i class="bx bxs-user-account"></i>
+                                    </a>
+                                    <a class="dropdown-item" href="mylearn.html">
+                                        تعلمى
+                                        <i class="bx bx-book-alt"></i>
+                                    </a>
+                                    <a class="dropdown-item" href="purchase-history.html">
+                                        سجل الشراء
+                                        <i class="bx bx-purchase-tag"></i>
+                                    </a>
+                                    <a class="dropdown-item" href="main.html">
+                                        تسجيل الخروج
+                                        <i class="bx bx-log-out"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="navbar-option-item navbar-option-authentication">
+                                <a href="#login-popup" class="btn main-btn text-white text-nowrap open-popup">تسجيل الدخول</a>
+                            </div>
+                            <div class="navbar-option-item navbar-option-authentication">
+                                <a href="#register-popup" class="btn main-btn btn-second text-nowrap open-popup2">التسجيل</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- End navbar -->
+        <!-- header -->
+        <header class="hero-header bg-grad over-hidden">
+            <div class="row">
+                <div class="col-12 col-lg-10 mx-auto">
+                    <div class="ads-hero swiper swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="ads-content swiper-slide">
+                                <div class="content flex-3 gap-20">
+                                    <div class="info w-100">
+                                        <h2 class="color-white">في الجامعة الاسلامية المفتوحة</h2>
+                                        <h5 class="color-white fw-400">نوفر لك فرصًا لدراسة برامج أكاديمية متميزة عبر الإنترنت، بما يتناسب مع حياتك المهنية والشخصية.
+                                                                انطلق في رحلة تعليمية مرنة، مع دعم مستمر من هيئة تدريس ذات خبرة، واكتساب مهارات تؤهلك للتميز </h5>    
+                                    </div>
+                                    <div class="image w-100">
+                                        <img class="radius-5" src="assets/images/hero/hero-1.jpg" alt="Ad 1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ads-content swiper-slide">
+                                <div class="content flex-3 gap-20">
+                                    <div class="info w-100">
+                                        <h2 class="color-white">تعلم على طريقتك، استثمر في مستقبلك</h2>
+                                        <h5 class="color-white fw-400">نقدم لك بيئة تعليمية ديناميكية تجمع بين التكنولوجيا الحديثة وأحدث أساليب التعليم الأكاديمي.
+                                                                مهما كانت اهتماماتك، ستجد البرنامج الذي يتناسب مع طموحاتك</h5>    
+                                    </div>
+                                    <div class="image w-100">
+                                        <img class="radius-5" src="assets/images/hero/hero-2.jpg" alt="Ad 1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ads-content swiper-slide">
+                                <div class="content flex-3 gap-20">
+                                    <div class="info w-100">
+                                        <h2 class="color-white">تعليم عالمي في متناول يدك</h2>
+                                        <h5 class="color-white fw-400">انضم إلى واحدة من أبرز الجامعات المفتوحة في العالم 
+                                                                واستفد من فرص التعليم عبر الإنترنت التي نوفرها لك. مع برامج دراسات معتمدة من قبل مؤسسات أكاديمية عالمية</h5>    
+                                    </div>
+                                    <div class="image w-100">
+                                        <img class="radius-5" src="assets/images/hero/hero-3.jpg" alt="Ad 1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </header>
+        <!-- End header -->
+        <!-- mylearn-section -->
+        <section class="mylearn-section p-tb-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 desk-p-0">
+                        <d class="flex space-between align-sm-center">
+                            <h2 class="mb-0">تعلمى</h2>
+                            <div class="swiper-carousel-control mylearn">
+                                <div class="swiper-button-next leran"></div>
+                                <div class="swiper-button-prev leran"></div>
+                            </div>
+                        </d>
+                        <div class="mylearn-carousel swiper swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="mylearn-card mylearn-card-thirdcolor swiper-slide">
+                                    <div class="mylearn-card-inner">
+                                        <div class="mylearn-card-thumb">
+                                            <img src="assets/images/courses/degree5.png" alt="shape">
+                                        </div>
+                                        <div class="mylearn-card-content">
+                                            <h3>البكالوريوس فى اللغة العربية</h3>
+                                            <div class="amount-progress">
+                                                <span>مقدار التقدم</span>
+                                                <div class="progress">
+                                                    <div class="progress-bar bg-main-light" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                                                </div>
+                                            </div>
+                                            <div class="order-status">
+                                                <span>حالة الطلب</span>
+                                                <div class="application-status">
+                                                    <span class="status status-badge">في انتظار القبول</span>
+                                                </div>
+                                                <div class="rejection-reason modal hidden">
+                                                    <div class="modal-content">
+                                                        <span class="close-btn">&times;</span>
+                                                        <p>سبب الرفض:</p>
+                                                        <span class="rejection-text"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="end-date mt-20">
+                                                <span class="ml-10">تاريخ انتهاء الدورة</span>
+                                                <span class="course-end-date">10/11/2024</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mylearn-card mylearn-card-thirdcolor swiper-slide">
+                                    <div class="mylearn-card-inner">
+                                        <div class="mylearn-card-thumb">
+                                            <img src="assets/images/courses/degree8.jpg" alt="shape">
+                                        </div>
+                                        <div class="mylearn-card-content">
+                                            <h3>البكالوريوس فى التربية</h3>
+                                            <div class="amount-progress">
+                                                <span>مقدار التقدم</span>
+                                                <div class="progress">
+                                                    <div class="progress-bar bg-main-light" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                                                </div>
+                                            </div>
+                                            <div class="order-status">
+                                                <span>حالة الطلب</span>
+                                                <div class="application-status">
+                                                    <span class="status status-badge">في انتظار القبول</span>
+                                                </div>
+                                                <div class="rejection-reason modal hidden">
+                                                    <div class="modal-content">
+                                                        <span class="close-btn">&times;</span>
+                                                        <p>سبب الرفض:</p>
+                                                        <span class="rejection-text"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="end-date mt-20">
+                                                <span class="ml-10">تاريخ انتهاء الدورة</span>
+                                                <span class="course-end-date">10/11/2024</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mylearn-card mylearn-card-thirdcolor swiper-slide">
+                                    <div class="mylearn-card-inner">
+                                        <div class="mylearn-card-thumb">
+                                            <img src="assets/images/courses/degree9.png" alt="shape">
+                                        </div>
+                                        <div class="mylearn-card-content">
+                                            <h3>البكالوريوس فى إدارة الأعمال</h3>
+                                            <div class="amount-progress">
+                                                <span>مقدار التقدم</span>
+                                                <div class="progress">
+                                                    <div class="progress-bar bg-main-light" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                                                </div>
+                                            </div>
+                                            <div class="order-status">
+                                                <span>حالة الطلب</span>
+                                                <div class="application-status">
+                                                    <span class="status status-badge">في انتظار القبول</span>
+                                                </div>
+                                                <div class="rejection-reason modal hidden">
+                                                    <div class="modal-content">
+                                                        <span class="close-btn">&times;</span>
+                                                        <p>سبب الرفض:</p>
+                                                        <span class="rejection-text"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="end-date mt-20">
+                                                <span class="ml-10">تاريخ انتهاء الدورة</span>
+                                                <span class="course-end-date">10/11/2024</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mylearn-card mylearn-card-thirdcolor swiper-slide">
+                                    <div class="mylearn-card-inner">
+                                        <div class="mylearn-card-thumb">
+                                            <img src="assets/images/courses/degree4.png" alt="shape">
+                                        </div>
+                                        <div class="mylearn-card-content">
+                                            <h3>الماجستير فى الشريعة والقانون</h3>
+                                            <div class="amount-progress">
+                                                <span>مقدار التقدم</span>
+                                                <div class="progress">
+                                                    <div class="progress-bar bg-main-light" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                                                </div>
+                                            </div>
+                                            <div class="order-status">
+                                                <span>حالة الطلب</span>
+                                                <div class="application-status">
+                                                    <span class="status status-badge">في انتظار القبول</span>
+                                                </div>
+                                                <div class="rejection-reason modal hidden">
+                                                    <div class="modal-content">
+                                                        <span class="close-btn">&times;</span>
+                                                        <p>سبب الرفض:</p>
+                                                        <span class="rejection-text"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="end-date mt-20">
+                                                <span class="ml-10">تاريخ انتهاء الدورة</span>
+                                                <span class="course-end-date">10/11/2024</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mylearn-card mylearn-card-thirdcolor swiper-slide">
+                                    <div class="mylearn-card-inner">
+                                        <div class="mylearn-card-thumb">
+                                            <img src="assets/images/courses/degree4.png" alt="shape">
+                                        </div>
+                                        <div class="mylearn-card-content">
+                                            <h3>الدكتوراه فى الشريعة والقانون</h3>
+                                            <div class="amount-progress">
+                                                <span>مقدار التقدم</span>
+                                                <div class="progress">
+                                                    <div class="progress-bar bg-main-light" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                                                </div>
+                                            </div>
+                                            <div class="order-status">
+                                                <span>حالة الطلب</span>
+                                                <div class="application-status">
+                                                    <span class="status status-badge">في انتظار القبول</span>
+                                                </div>
+                                                <div class="rejection-reason modal hidden">
+                                                    <div class="modal-content">
+                                                        <span class="close-btn">&times;</span>
+                                                        <p>سبب الرفض:</p>
+                                                        <span class="rejection-text"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="end-date mt-20">
+                                                <span class="ml-10">تاريخ انتهاء الدورة</span>
+                                                <span class="course-end-date">10/11/2024</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End mylearn-section -->
+        <!-- about-section -->
+        <section class="about-section pb-100">
+            <div class="container">
+                <div class="section-title section-title-shapeless section-title-lineless section-title-thirdcolor">
+                    <h2>من نحن</h2>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-12 col-lg-6 pb-30 order-1 order-lg-0">
+                        <div class="section-title section-title-left text-start">
+                            <p>الجامعة الإسلامية المفتوحة هي مؤسسة تعليمية عالمية تتبع نظام التعليم عن بعد في مجال العلوم الشرعية والإسلامية، بالإضافة إلى التخصصات التربوية واللغوية</p>
+                            <p>تأسست الجامعة على أساس التعليم عن بعد، ما يعني أن الطلاب يمكنهم الحصول على شهاداتهم الجامعية ومواصلة تعليمهم دون الحاجة إلى الحضور الشخصي. تعتمد الجامعة على تقنيات التعليم الحديثة، بما في ذلك المنصات الإلكترونية والوسائط المتعددة، لتوفير محتوى تعليمي متميز وفاعل.</p>
+                        </div>
+                            <a href="about-us.html" class="btn main-btn">معرفة المزيد</a>
+                    </div>
+                    <div class="col-12 col-lg-6 pb-30 order-0 order-lg-1">
+                        <div class="about-image">
+                            <img class="w-100" src="assets/images/about-image.png" alt="about">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End about-section -->
+        <!-- courses-section -->
+        <section class="courses-section main-page pb-50">
+            <div class="container">
+                <div class="row">
+                    <div class="flex space-between align-sm-center p-lr-sm-12 p-0">
+                        <h2>الدرجات العلمية</h2>
+                        <div class="swiper-carousel-control">
+                            <div class="swiper-button-next course"></div>
+                            <div class="swiper-button-prev course"></div>
+                        </div>
+                    </div>
+                    <div class="main-courses swiper swiper-container">
+                        <div class="swiper-wrapper">
+                                <div class="course-flat-card swiper-slide">
+                                    <div class="course-card-thumb">
+                                        <a href="courses.html"><img src="assets/images/courses/acad-degree.png" alt="course"></a>
+                                    </div>
+                                    <div class="course-card-content text-center">
+                                        <h3>الدكتوراه</h3>
+                                    </div>
+                                </div>
+                                <div class="course-flat-card swiper-slide">
+                                    <div class="course-card-thumb">
+                                        <a href="courses.html"><img src="assets/images/courses/acad-degree-2.png" alt="course"></a>
+                                    </div>
+                                    <div class="course-card-content text-center">
+                                        <h3>الماجستير</h3>
+                                    </div>
+                                </div>
+                                <div class="course-flat-card swiper-slide">
+                                    <div class="course-card-thumb">
+                                        <a href="courses.html"><img src="assets/images/courses/acad-degree-3.png" alt="course"></a>
+                                    </div>
+                                    <div class="course-card-content text-center">
+                                        <h3>الدبلومة العالية</h3>
+                                    </div>
+                                </div>
+                                <div class="course-flat-card swiper-slide">
+                                    <div class="course-card-thumb">
+                                        <a href="courses.html"><img src="assets/images/courses/acad-degree-4.png" alt="course"></a>
+                                    </div>
+                                    <div class="course-card-content text-center">
+                                        <h3>الدبلومة المتقدمة</h3>
+                                    </div>
+                                </div>
+                                <div class="course-flat-card swiper-slide">
+                                    <div class="course-card-thumb">
+                                        <a href="courses.html"><img src="assets/images/courses/acad-degree-5.png" alt="course"></a>
+                                    </div>
+                                    <div class="course-card-content text-center">
+                                        <h3>البكالوريوس</h3>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End courses-section -->
+        <!-- Spec-Section -->
+        <section class="spec-section bg-off-white pt-50 pb-70">
+            <div class="container">
+                <div class="row">
+                    <div class="flex space-between align-sm-center p-lr-sm-12 p-0">
+                        <h2>التخصصات</h2>
+                        <div class="swiper-carousel-control">
+                            <div class="swiper-button-next spec"></div>
+                            <div class="swiper-button-prev spec"></div>
+                        </div>
+                    </div>
+                    <div class="main-spec swiper swiper-container">
+                        <div class="swiper-wrapper">
+                                <div class="course-flat-card swiper-slide">
+                                    <div class="course-card-thumb">
+                                        <a href="courses.html"><img src="assets/images/courses/spec1.jpg" alt="course"></a>
+                                    </div>
+                                    <div class="course-card-content h-fit text-center">
+                                        <h3>القانون</h3>
+                                    </div>
+                                </div>
+                                <div class="course-flat-card swiper-slide">
+                                    <div class="course-card-thumb">
+                                        <a href="courses.html"><img src="assets/images/courses/spec2.jpg" alt="course"></a>
+                                    </div>
+                                    <div class="course-card-content h-fit text-center">
+                                        <h3>إدارة الأعمال</h3>
+                                    </div>
+                                </div>
+                                <div class="course-flat-card swiper-slide">
+                                    <div class="course-card-thumb">
+                                        <a href="courses.html"><img src="assets/images/courses/spec3.jpg" alt="course"></a>
+                                    </div>
+                                    <div class="course-card-content h-fit text-center">
+                                        <h3>الاقتصاد</h3>
+                                    </div>
+                                </div>
+                                <div class="course-flat-card swiper-slide">
+                                    <div class="course-card-thumb">
+                                        <a href="courses.html"><img src="assets/images/courses/spec4.jpg" alt="course"></a>
+                                    </div>
+                                    <div class="course-card-content h-fit text-center">
+                                        <h3>علم النفس</h3>
+                                    </div>
+                                </div>
+                                <div class="course-flat-card swiper-slide">
+                                    <div class="course-card-thumb">
+                                        <a href="courses.html"><img src="assets/images/courses/spec5.jpg" alt="course"></a>
+                                    </div>
+                                    <div class="course-card-content h-fit text-center">
+                                        <h3>التربية</h3>
+                                    </div>
+                                </div>
+                                <div class="course-flat-card swiper-slide">
+                                    <div class="course-card-thumb">
+                                        <a href="courses.html"><img src="assets/images/courses/spec6.jpg" alt="course"></a>
+                                    </div>
+                                    <div class="course-card-content h-fit text-center">
+                                        <h3>الفقه الإسلامي</h3>
+                                    </div>
+                                </div>
+                                <div class="course-flat-card swiper-slide">
+                                    <div class="course-card-thumb">
+                                        <a href="courses.html"><img src="assets/images/courses/spec7.jpg" alt="course"></a>
+                                    </div>
+                                    <div class="course-card-content h-fit text-center">
+                                        <h3>القراءات</h3>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Spec-Section -->
+        <!-- testimonial-section -->
+        <section class="testimonial-section p-tb-100 bg-off-white position-relative">
+            <div class="double-bg-shape-items">
+                <div class="double-bg-shape-item">
+                    <img src="assets/images/shapes/circle-shape.png" alt="shape">
+                </div>
+            </div>
+            <div class="client-fixed-images">
+                <div class="client-fixed-image">
+                    <img src="assets/images/clients/client-2.jpg" alt="client">
+                </div>
+                <div class="client-fixed-image">
+                    <img src="assets/images/clients/client-3.jpg" alt="client">
+                </div>
+                <div class="client-fixed-image">
+                    <img src="assets/images/clients/client-4.jpg" alt="client">
+                </div>
+                <div class="client-fixed-image">
+                    <img src="assets/images/clients/client-5.jpg" alt="client">
+                </div>
+            </div>
+            <div class="testimonial-animation-items">
+                <div class="testimonial-animation-item animation-tab-none">
+                    <img src="assets/images/shapes/triangle-shape.png" alt="shape">
+                </div>
+            </div>
+            <div class="container">
+                <div class="section-title">
+                    <h2>آراء الطلاب</span></h2>
+                </div>
+                <div class="testimonial-carousel swiper swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="testimonial-carousel-item swiper-slide">
+                            <div class="testimonial-carousel-thumb">
+                                <img src="assets/images/clients/client-1.jpg" alt="client">
+                            </div>
+                            <div class="testimonial-carousel-content">
+                                <h3 class="testimonial-client-name">احمد حسن</h3>
+                                <h4 class="testimonial-client-designation">طالب فى <span>العلوم الشرعية</span></h4>
+                                <p class="testimonial-client-feedback">“أنا طالب في تخصص الفقه والشريعة في الجامعة الإسلامية المفتوحة. التجربة كانت رائعة لأنني قادر على دراسة المواد الشرعية بطريقة مرنة، في الوقت الذي يناسبني. التعلم عن بُعد ساعدني على التوفيق بين دراستي وحياتي اليومية. كما أن المنصات الإلكترونية المستخدمة فعالة للغاية وتتيح لي الوصول إلى المحاضرات والمواد الدراسية بسهولة.”</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-carousel-item swiper-slide">
+                            <div class="testimonial-carousel-thumb">
+                                <img src="assets/images/clients/client-2.jpg" alt="client">
+                            </div>
+                            <div class="testimonial-carousel-content">
+                                <h3 class="testimonial-client-name">بلال علام</h3>
+                                <h4 class="testimonial-client-designation">طالب فى <span>اللغة العربية</span></h4>
+                                <p class="testimonial-client-feedback">“أدرس الأدب العربي في الجامعة الإسلامية المفتوحة، ومنذ بداية دراستي وأنا معجب بالتقنيات التعليمية التي تعتمدها الجامعة. المحتوى التعليمي غني ويشمل مصادر متنوعة، وأحب أنني أستطيع التفاعل مع الأساتذة وزملائي عبر الإنترنت. يوفر لي هذا النظام مرونة كبيرة، خاصة أنني أستطيع الدراسة من المنزل أو من أي مكان آخر”</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-carousel-item swiper-slide">
+                            <div class="testimonial-carousel-thumb">
+                                <img src="assets/images/clients/client-3.jpg" alt="client">
+                            </div>
+                            <div class="testimonial-carousel-content">
+                                <h3 class="testimonial-client-name">احمد ابراهيم</h3>
+                                <h4 class="testimonial-client-designation">طالب فى <span>التربية الاسلامية</span></h4>
+                                <p class="testimonial-client-feedback">“أعتبر الدراسة في الجامعة الإسلامية المفتوحة فرصة ثمينة لتحسين مهاراتي في مجال التربية الإسلامية. المواد الدراسية تتضمن جوانب نظرية وعملية، مما يعزز من قدرتي على تطبيق المعرفة في الواقع. كما أن النظام الإلكتروني للجامعة يجعل من السهل متابعة المحاضرات وحضور المناقشات الحية مع الأساتذة والطلاب الآخرين.”</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-carousel-item swiper-slide">
+                            <div class="testimonial-carousel-thumb">
+                                <img src="assets/images/clients/client-4.jpg" alt="client">
+                            </div>
+                            <div class="testimonial-carousel-content">
+                                <h3 class="testimonial-client-name">مصطفى ياسر</h3>
+                                <h4 class="testimonial-client-designation">طالب فى <span>الدراسات الإسلامية</span></h4>
+                                <p class="testimonial-client-feedback">“الجامعة الإسلامية المفتوحة تعطي فرصة كبيرة للطلاب الذين لا يستطيعون الالتحاق بالجامعات التقليدية. الدراسة عن بُعد توفر لي حرية ترتيب جدولي الدراسي كما أريد، مما يساعدني على التوفيق بين العمل والدراسة. كما أن الجودة التعليمية عالية، والمنصات التعليمية توفر جميع الأدوات التي أحتاجها لإتمام دراستي بشكل جيد”</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-carousel-item swiper-slide">
+                            <div class="testimonial-carousel-thumb">
+                                <img src="assets/images/clients/client-5.jpg" alt="client">
+                            </div>
+                            <div class="testimonial-carousel-content">
+                                <h3 class="testimonial-client-name">خالد صبحى</h3>
+                                <h4 class="testimonial-client-designation">طالب فى <span>الشريعة والقانون</span></h4>
+                                <p class="testimonial-client-feedback">“من خلال تجربتي في دراسة الشريعة والقانون في هذه الجامعة، أعتقد أن التعليم عن بعد هو الخيار الأفضل بالنسبة لي، حيث أنني أتمكن من دراسة الموضوعات العميقة في الشريعة الإسلامية في وقتي الخاص. الأساتذة ملتزمون بتقديم المساعدات عبر الإنترنت بشكل مستمر، وهذا يسهم في تحقيق فهم أعمق للمحتوى الدراسي”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-carousel-control">
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+        </section> 
+        <!-- End testimonial-section -->
+        <!-- contact-section -->
+        <section class="contact-section bg-1 contact-section-bg p-tb-100">
+            <div class="container">
+                <div class="section-title section-title-shapeless section-title-lineless section-title-green mb-0">
+                    <h2>التسجيل متاح الآن</h2>
+                    <h3 class="text-white fw-400">يمكنك البدأ الآن والتسجيل فى الدرجة العلمية التى تطمح للحصول عليها</h3>
+                    <a href="contact-us.html" class="btn main-btn btn-thirdcolor mt-10 text-blue-light">سجل الآن <i class="flaticon-right-arrow"></i></a>
+                </div>
+            </div>
+        </section>
+        <!-- End contact-section -->
+        
+        <!-- footer -->
+        <footer>
+            <div class="footer-upper pt-100">
+                <div class="container-lg">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 mx-auto col-lg-4">
+                            <div class="footer-content-item">
+                                <div class="footer-logo">
+                                    <a href="main.html"><img src="assets/images/logo-3-white.png" alt="logo"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-8">
+                            <div class="footer-right desk-pad-right-40">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-12 col-lg-7">
+                                        <div class="footer-content-item contact">
+                                            <div class="footer-content-title">
+                                                <h3>تواصل معنا</h3>
+                                            </div>
+                                            <div class="footer-details footer-address-info">
+                                                <div class="footer-address-info-item">
+                                                    <p class="footer-contact-number"><img class="ml-10" src="assets/images/phone.png" alt="social"><a href="tel:001-800-388-80-90">800 388 80 90</a></p>
+                                                </div>
+                                                <div class="footer-address-info-item">
+                                                    <p class="footer-whats"><img class="ml-10" src="assets/images/whatsapp.png" alt="social"><a href="#">800 388 80 90</a></p>
+                                                </div>
+                                                <div class="footer-address-info-item">
+                                                    <p class="footer-email"><img class="ml-10" src="assets/images/mail.png" alt="social"><a href="mailto:hello@jexi.com">hello@jexi.com</a></p>
+                                                </div>
+                                                <div class="footer-address-info-item">
+                                                    <p class="footer-availability"><img class="ml-10" src="assets/images/clock.png" alt="social">مواعيد العمل من <span>10ص</span> الي <span>5م</span> بتوقيت القاهرة</p>
+                                                </div>
+                                            </div>
+                                            <div class="footer-social-item pt-30">
+                                                <ul class="social-list">
+                                                    <li><a href="#"><img src="assets/images/facebook.png" alt="social"></a></li>
+                                                    <li><a href="#"><img src="assets/images/twitter.png" alt="social"></a></li>
+                                                    <li><a href="#"><img src="assets/images/instagram.png" alt="social"></a></li>
+                                                    <li><a href="#"><img src="assets/images/youtube.png" alt="social"></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-5">
+                                        <div class="footer-content-list footer-content-item">
+                                            <div class="footer-content-title">
+                                                <h3>روابط مفيدة</h3>
+                                            </div>
+                                            <ul class="footer-details footer-list">
+                                                <li><a href="main.html">الرئيسية</a></li>
+                                                <li><a href="courses.html">الدرجات العلمية</a></li>
+                                                <li><a href="about-us.html">من نحن</a></li>
+                                                <li><a href="faqs.html">الاسئلة الشائعة</a></li>
+                                                <li><a href="contact-us.html">تواصل معنا</a></li>
+                                                <li><a href="privacy-policy.html">سياسة الخصوصية</a></li>
+                                                <li><a href="terms-and-use.html">الشروط والاستخدام</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-lower">
+                <div class="background-shapes">
+                    <div class="background-shape-item">
+                        <img src="assets/images/shapes/animate-shape-1.png" alt="line">
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="footer-lower-grid">
+                        <div class="footer-lower-item footer-lower-info">
+                            <div class="footer-copyright-text">
+                                <p>Copyright  @ <script>document.write(new Date().getFullYear())</script> Design &amp; Developed By <a href="https://hibootstrap.com/" target="_blank">SY</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Eend footer -->
+
+        <!-- Login Popup -->
+        <div id="login-popup" class="mfp-hide col-sm-8 col-md-6 col-xxl-4 pb-30 mx-auto p-relative">
+            <div class="authentication-item">
+                <h3>تسجيل الدخول</h3>
+                <div class="authentication-form">
+                    <form>
+                        <div class="form-group mb-20">
+                            <div class="input-group">
+                                <input type="text" name="user" class="form-control" required="" placeholder="البريد الالكترونى*">
+                            </div>
+                        </div>
+                        <div class="form-group mb-20">
+                            <div class="input-group">
+                                <input type="password" name="email" class="form-control" required="" placeholder="كلمة السر*">
+                            </div>
+                        </div>
+                        <div class="authentication-account-access mb-20">
+                            <div class="authentication-account-access-item">
+                                <div class="input-checkbox">
+                                    <input type="checkbox" id="check1">
+                                    <label for="check1">تذكرنى!</label>
+                                </div>
+                            </div>
+                            <div class="authentication-account-access-item">
+                                <div class="authentication-link">
+                                    <a href="forget-password.html">نسيت كلمة السر؟</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="btn main-btn">تسجيل الدخول</button>
+                        </div>
+                        <div class="authentication-account-access-item">
+                            <div class="authentication-link">
+                                <span class="ml-10">أو</span> <a href="#register-popup" class="open-popup2">إنشاء حساب جديد</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Login Popup -->
+        <!-- Register Popup -->
+        <div id="register-popup" class="mfp-hide col-sm-8 col-md-6 col-xxl-4 pb-30 mx-auto p-relative">
+        <div class="authentication-item register">
+            <h3>إنشاء حساب جديد</h3>
+            <div class="authentication-form">
+                <form>
+                    <div class="row">
+                        <div class="form-group mb-20">
+                            <div class="input-group">
+                                <input type="text" name="name" class="form-control" required="" placeholder="الاسم*">
+                            </div>
+                        </div>
+                        <div class="form-group mb-20">
+                            <div class="group-select">
+                                <div class="nice-select" tabindex="0"><span class="current">الجنسية*</span>
+                                    <ul class="list nationality"> 
+                                        <li class="option selected focus">الجنسية</li>                                                         
+                                        <li data-value="saudi" class="option">السعودية</li>                                                         
+                                        <li data-value="morocco" class="option">المغرب</li>                                                         
+                                        <li data-value="egypt" class="option">مصر</li>                                                         
+                                        <li data-value="qatar" class="option">قطر</li>                                                         
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group mb-20">
+                            <div class="group-select">
+                                <div class="nice-select" tabindex="0"><span class="current">المؤهل الدراسى الحاصل عليه*</span>
+                                    <ul class="list eduqualification"> 
+                                        <li class="option selected focus">المؤهل الدراسى الحاصل عليه</li>                                                         
+                                        <li data-value="Phd" class="option">الدكتوراه</li>                                                         
+                                        <li data-value="ma" class="option">الماجستير</li>                                                         
+                                        <li data-value="ba" class="option">البكالوريوس</li>                                                         
+                                        <li data-value="bs" class="option">الليسانس</li>                                                         
+                                        <li data-value="highschool" class="option">الثانوية</li>                                                         
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group mb-20">
+                            <div class="group-select">
+                                <div class="nice-select" tabindex="0"><span class="current">التخصص المطلوب التسجيل فيه*</span>
+                                    <ul class="list major"> 
+                                        <li class="option selected focus">التخصص المطلوب التسجيل فيه</li>                                                         
+                                        <li data-value="1" class="option">الدكتوراه في العقيدة والتوحيد</li>                                                         
+                                        <li data-value="2" class="option">الدكتوراه في اللغة العربية</li>                                                         
+                                        <li data-value="3" class="option">الماجستير في القانون العام</li>                                                         
+                                        <li data-value="4" class="option">البكالوريوسفي إدارة الأعمال</li>                                                         
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <div class="group-select mb-20">
+                                <div class="nice-select" tabindex="0"><span class="current">كود الدولة*</span>
+                                    <ul class="list country-code"> 
+                                        <li class="option selected focus">كود الدولة</li>                                                         
+                                        <li data-value="+20" class="option">مصر (+20)</li>                                                         
+                                        <li data-value="+966" class="option">السعودية (+966)</li>                                                         
+                                        <li data-value="+971" class="option">الإمارات (+971)</li>                                                         
+                                        <li data-value="+1" class="option">الولايات المتحدة (+1)</li>                                                         
+                                        <li data-value="+44" class="option">المملكة المتحدة (+44)</li>                                                         
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <div class="form-group mb-20">
+                                <div class="input-group">
+                                    <input type="text" name="phone" class="form-control" required="" placeholder="رقم الهاتف*">
+                                </div>        
+                            </div>
+                        </div>
+                        <div class="form-group mb-20">
+                            <div class="input-group">
+                                <input type="text" name="email" class="form-control" required="" placeholder="البريد الالكترونى*">
+                            </div>
+                        </div>
+                        <div class="form-group mb-20">
+                            <div class="input-group">
+                                <input type="password" name="email" class="form-control" required="" placeholder="كلمة المرور*">
+                            </div>
+                        </div>
+                        <div class="form-group mb-20">
+                            <div class="input-group">
+                                <input type="password" name="email" class="form-control" required="" placeholder="تأكيد كلمة المرور*">
+                            </div>
+                        </div>
+                        <div class="authentication-account-access mb-20">
+                            <div class="authentication-account-access-item">
+                                <div class="input-checkbox">
+                                    <input type="checkbox" id="check2">
+                                    <label for="check2">أوافق على <a href="privacy-policy">سياسة الشروط والأحكام</a></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="btn main-btn mb-20">التسجيل الان</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
+        <!-- Register Popup -->
+
+        <!-- scroll-top -->
+        <div class="scroll-top" id="scrolltop">
+            <div class="scroll-top-inner">
+                <span><i class="flaticon-up-arrow"></i></span>
+            </div>
+        </div>
+        <!-- .end scroll-top -->
+
+        <!-- essential js -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <!-- magnific popup js -->
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <!-- nice-select js -->
+        <script src="assets/js/jquery.nice-select.min.js"></script>
+        <!-- swiper js -->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+        <!-- counter js -->
+        <script src="assets/js/jquery.waypoints.min.js"></script>
+        <script src="assets/js/jquery.counterup.min.js"></script>
+        <!-- fullcalender js -->
+        <script src="assets/js/moment.js"></script>
+        <script src="assets/js/main.min.js"></script>
+        <script src="assets/js/jquery-ui.js"></script>
+        <!-- isotope js -->
+        <script src="assets/js/isotope.pkgd.min.js"></script>
+        <!-- revolution slider js -->
+        <script src="assets/js/jquery.themepunch.revolution.min.js"></script>
+        <script src="assets/js/jquery.themepunch.tools.min.js"></script>
+        <!-- slider revolution extension scripts. only needed for local testing -->
+        <script src="assets/js/extensions/revolution.extension.actions.min.js"></script>
+        <script src="assets/js/extensions/revolution.extension.carousel.min.js"></script>
+        <script src="assets/js/extensions/revolution.extension.kenburn.min.js"></script>
+        <script src="assets/js/extensions/revolution.extension.layeranimation.min.js"></script>
+        <script src="assets/js/extensions/revolution.extension.migration.min.js"></script>
+        <script src="assets/js/extensions/revolution.extension.navigation.min.js"></script>
+        <script src="assets/js/extensions/revolution.extension.parallax.min.js"></script>
+        <script src="assets/js/extensions/revolution.extension.slideanims.min.js"></script>
+        <script src="assets/js/extensions/revolution.extension.video.min.js"></script>
+        <!-- form ajazchimp js -->
+        <script src="assets/js/jquery.ajaxchimp.min.js"></script>
+        <!-- form validator js  -->
+        <script src="assets/js/form-validator.min.js"></script>
+        <!-- contact form js -->
+        <script src="assets/js/contact-form-script.js"></script>
+        <!-- meanmenu js -->
+        <script src="assets/js/jquery.meanmenu.min.js"></script>
+        <!-- main js -->
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>

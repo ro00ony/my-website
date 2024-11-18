@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Jexi">
+        <meta name="keywords" content="HTML,CSS,JavaScript">
+        <meta name="author" content="HiBootstrap">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <title>Jexi - Online Coaching & Education Training HTML Template</title>
+        <link rel="icon" href="assets/images/tab.png" type="image/png" sizes="16x16">
+
+    
+        <!-- bootstrap css -->
+        <link rel="stylesheet" href="assets/css/bootstrap-reboot.min.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css" type="text/css" media="all" />
+        <!-- animate css -->
+        <link rel="stylesheet" href="assets/css/animate.min.css" type="text/css" media="all" />
+        <!-- swiper css -->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css"  type="text/css" media="all" />
+        <!-- meanmenu css -->
+        <link rel="stylesheet" href="assets/css/meanmenu.min.css" type="text/css" media="all" />
+        <!-- magnific popup css -->
+        <link rel="stylesheet" href="assets/css/magnific-popup.min.css" type="text/css" media="all" />
+        <!-- fullcalender css -->
+        <link rel="stylesheet" href="assets/css/main.min.css" type="text/css" media="all" />
+        <!-- boxicons css -->
+        <link rel='stylesheet' href='assets/css/boxicons.min.css' type="text/css" media="all" />
+        <!-- flaticon css -->
+        <link rel='stylesheet' href='assets/css/flaticon.css' type="text/css" media="all" />
+        <!-- revolution slider css -->
+        <link rel='stylesheet' href='assets/css/settings.css' type="text/css" media="all" />
+        <link rel='stylesheet' href='assets/css/layers.css' type="text/css" media="all" />
+        <link rel='stylesheet' href='assets/css/navigation.css' type="text/css" media="all" />
+        <!-- style css -->
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css" media="all" />
+        <!-- responsive css -->
+        <link rel="stylesheet" href="assets/css/responsive.css" type="text/css" media="all" />
+        <!-- nice-select css -->
+        <link rel="stylesheet" href="assets/css/nice-select.css" type="text/css" media="all" />
+        <!-- RTL css -->
+        <link rel="stylesheet" href="assets/css/rtl.css" type="text/css" media="all" />
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <!-- preloader -->
+        <div class="preloader bg-grad">
+            <div class="preloader-wrapper">
+                <div class="loader-content book">
+                    <figure class="page"></figure>
+                    <figure class="page"></figure>
+                    <figure class="page"></figure>
+                </div>
+                <h3>Loading</h3>
+            </div>
+        </div>
+        <!-- End preloader -->
+        <!-- navbar -->
+        <div class="navbar-area">
+            <!-- mobile menu -->
+            <div class="mobile-nav">
+                <a href="main.html" class="mobile-brand">
+                    <img src="assets/images/logo.png" alt="logo" class="logo logo1">
+                    <img src="assets/images/logo-3-white.png" alt="logo" class="logo2">
+                </a>
+                <div class="navbar-option">
+                    <div class="nnavbar-option-item navbar-option-settings navbar-option-wishlist navbar-search-box"> 
+                        <button class="dropdown-show" type="button" id="box-search" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="flaticon-search ml-0"></i>
+                        </button>
+                        <div class="dropdown-menu box-search mobile" aria-labelledby="box-search">  
+                            <div class="search-container mobile">
+                                <input type="text" id="search-input" placeholder="التخصص المطلوب دراسته..." class="search-input">
+                                <button class="btn main-btn"><i class="flaticon-search m-0"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navbar-option-item navbar-option-account mr-20">
+                        <a href="#login-popup" class="open-popup"><i class="bx bx-log-in"></i></a>
+                    </div>
+                    <div class="navbar-option-item navbar-option-cart">
+                        <a href="notifications.html"><i class="bx bxs-bell"></i>
+                            <span class="option-badge option-badge-main">2</span>
+                        </a>
+                    </div>
+                    <div class="nnavbar-option-item navbar-option-settings dropdown profile-settings navbar-option-wishlist mr-15"> 
+                        <button class="dropdown-show" type="button" id="account-settings2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="bx bxs-user"></i>
+                        </button>
+                        <div class="dropdown-menu mobile settings-dropdown-menu" aria-labelledby="account-settings2">  
+                            <a class="dropdown-item" href="edit-account.html">
+                                إعدادات حسابى
+                                <i class="bx bxs-user-account"></i>
+                            </a>
+                            <a class="dropdown-item" href="mylearn.html">
+                                تعلمى
+                                <i class="bx bx-book-alt"></i>
+                            </a>
+                            <a class="dropdown-item" href="purchase-history.html">
+                                سجل الشراء
+                                <i class="bx bx-purchase-tag"></i>
+                            </a>
+                            <a class="dropdown-item" href="main.html">
+                                تسجيل الخروج
+                                <i class="bx bx-log-out"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- desktop menu -->
+            <div class="main-nav">
+                <div class="container-fluid">
+                    <nav class="navbar navbar-expand-md navbar-light">
+                        <a class="navbar-brand" href="main.html">
+                            <img src="assets/images/logo.png" alt="logo" class="logo logo1">
+                            <img src="assets/images/logo-3-white.png" alt="logo" class="logo2">
+                        </a>
+                        <div class="navbar-search">
+                            <form>
+                                <div class="input-group exceptional">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <i class="flaticon-search"></i>
+                                        </div>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="التخصص المطلوب دراسته">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="nnavbar-option-item navbar-option-settings navbar-option-wishlist navbar-search-box"> 
+                            <button class="dropdown-show" type="button" id="box-search" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="flaticon-search"></i>
+                            </button>
+                            <div class="dropdown-menu box-search desktop" aria-labelledby="box-search">  
+                                <div class="search-container">
+                                    <input type="text" id="search-input" placeholder="التخصص المطلوب دراسته..." class="search-input">
+                                    <button class="btn main-btn"><i class="flaticon-search m-0"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                            <ul class="navbar-nav mx-auto">
+                                <li class="nav-item">
+                                    <a href="main.html" class="nav-link">الرئيسية</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="mylearn.html" class="nav-link">تعلمى</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="courses.html" class="nav-link">الدرجات العلمية</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="about-us.html" class="nav-link">من نحن</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="contact-us.html" class="nav-link">تواصل معنا</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="navbar-option">
+                            <div class="navbar-option-item navbar-option-cart">
+                                <a href="notifications.html"><i class="bx bxs-bell"></i>
+                                    <span class="option-badge option-badge-main">2</span>
+                                </a>
+                            </div>
+                            <div class="nnavbar-option-item navbar-option-settings dropdown profile-settings navbar-option-wishlist"> 
+                                <button class="dropdown-show" type="button" id="account-settings" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="bx bxs-user"></i>
+                                </button>
+                                <div class="dropdown-menu settings-dropdown-menu" aria-labelledby="account-settings2">  
+                                    <a class="dropdown-item" href="edit-account.html">
+                                        إعدادات حسابى
+                                        <i class="bx bxs-user-account"></i>
+                                    </a>
+                                    <a class="dropdown-item" href="mylearn.html">
+                                        تعلمى
+                                        <i class="bx bx-book-alt"></i>
+                                    </a>
+                                    <a class="dropdown-item" href="purchase-history.html">
+                                        سجل الشراء
+                                        <i class="bx bx-purchase-tag"></i>
+                                    </a>
+                                    <a class="dropdown-item" href="main.html">
+                                        تسجيل الخروج
+                                        <i class="bx bx-log-out"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="navbar-option-item navbar-option-authentication">
+                                <a href="#login-popup" class="btn main-btn text-white text-nowrap open-popup">تسجيل الدخول</a>
+                            </div>
+                            <div class="navbar-option-item navbar-option-authentication">
+                                <a href="#register-popup" class="btn main-btn btn-second text-nowrap open-popup2">التسجيل</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- End navbar -->
+        <!-- Header -->
+        <header class="header-page">
+            <div class="container">
+                <div class="header-page-content">
+                    <h1>نتيجة البحث بـ "بحث"</h1>
+                </div>
+                <div class="bread-content">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="main.html">الرئيسية</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">بحث</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- End Header -->
+        <!-- search-page-section -->
+        <div class="search-page-section pt-100 pb-70">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-8 pb-30">
+                        <div class="blog-list-content desk-pad-right-30">
+                            <h1>لم يتم العثور على نتائج !</h1>
+                            <div class="blog-list-card mb-30 d-none">
+                                <div class="blog-list-card-thumb">
+                                    <a href="single-blog.html"><img src="assets/images/blog-list-1.jpg" alt="blog"></a>
+                                </div>
+                                <div class="blog-list-card-content bg-off-white">
+                                    <ul class="course-entry-list">
+                                        <li><i class="flaticon-open-book"></i> Study Pass</li>
+                                        <li><i class="flaticon-man"></i> Admin</li>
+                                    </ul>
+                                    <h3><a href="single-blog.html">USA Coordinates & Participates in a Variety of Fairs</a></h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                </div>
+                            </div>
+                            <div class="blog-list-card mb-30 d-none">
+                                <div class="blog-list-card-content bg-off-white">
+                                    <ul class="course-entry-list">
+                                        <li><i class="flaticon-open-book"></i> Annual</li>
+                                        <li><i class="flaticon-man"></i> Admin</li>
+                                    </ul>
+                                    <h3><a href="single-blog.html">An Annual Survey Produced by the International Education</a></h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                </div>
+                            </div>
+                            <nav aria-label="Page navigation example" class="page-pagination d-none">
+                                <ul class="pagination">
+                                    <li class="page-item disabled"><a class="page-link" href="#"><i class="flaticon-right-arrow"></i></a></li>
+                                    <li class="page-item active">
+                                    <a class="page-link" href="#">1 <span class="sr-only">(current)</span></a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#"><i class="flaticon-left-arrow-1"></i></a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 pb-30">
+                        <div class="sidebar-item sidebar-search mb-40">
+                            <div class="sidebar-title">
+                                <h3>بحث</h3>
+                            </div>
+                            <form>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="بحث...">
+                                    <button class="btn main-btn"><i class="flaticon-search"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="sidebar-item">
+                            <div class="sidebar-title">
+                                <h3>تخصصات</h3>
+                            </div>
+                            <div class="sidebar-content">
+                                <ul class="sidebar-tag">
+                                    <li><a href="#">تفسير</a></li>
+                                    <li><a href="#">لفة عربية</a></li>
+                                    <li><a href="#">ادارة اعمال</a></li>
+                                    <li><a href="#">قانون</a></li>
+                                    <li><a href="#">علم نفس</a></li>
+                                    <li><a href="#">حديث</a></li>
+                                    <li><a href="#">قراءات</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End search-page-section -->
+        <!-- footer -->
+        <footer>
+            <div class="footer-upper pt-100">
+                <div class="container-lg">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 mx-auto col-lg-4">
+                            <div class="footer-content-item">
+                                <div class="footer-logo">
+                                    <a href="main.html"><img src="assets/images/logo-3-white.png" alt="logo"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-8">
+                            <div class="footer-right desk-pad-right-40">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-12 col-lg-7">
+                                        <div class="footer-content-item contact">
+                                            <div class="footer-content-title">
+                                                <h3>تواصل معنا</h3>
+                                            </div>
+                                            <div class="footer-details footer-address-info">
+                                                <div class="footer-address-info-item">
+                                                    <p class="footer-contact-number"><img class="ml-10" src="assets/images/phone.png" alt="social"><a href="tel:001-800-388-80-90">800 388 80 90</a></p>
+                                                </div>
+                                                <div class="footer-address-info-item">
+                                                    <p class="footer-whats"><img class="ml-10" src="assets/images/whatsapp.png" alt="social"><a href="#">800 388 80 90</a></p>
+                                                </div>
+                                                <div class="footer-address-info-item">
+                                                    <p class="footer-email"><img class="ml-10" src="assets/images/mail.png" alt="social"><a href="mailto:hello@jexi.com">hello@jexi.com</a></p>
+                                                </div>
+                                                <div class="footer-address-info-item">
+                                                    <p class="footer-availability"><img class="ml-10" src="assets/images/clock.png" alt="social">مواعيد العمل من <span>10ص</span> الي <span>5م</span> بتوقيت القاهرة</p>
+                                                </div>
+                                            </div>
+                                            <div class="footer-social-item pt-30">
+                                                <ul class="social-list">
+                                                    <li><a href="#"><img src="assets/images/facebook.png" alt="social"></a></li>
+                                                    <li><a href="#"><img src="assets/images/twitter.png" alt="social"></a></li>
+                                                    <li><a href="#"><img src="assets/images/instagram.png" alt="social"></a></li>
+                                                    <li><a href="#"><img src="assets/images/youtube.png" alt="social"></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-5">
+                                        <div class="footer-content-list footer-content-item">
+                                            <div class="footer-content-title">
+                                                <h3>روابط مفيدة</h3>
+                                            </div>
+                                            <ul class="footer-details footer-list">
+                                                <li><a href="main.html">الرئيسية</a></li>
+                                                <li><a href="courses.html">الدرجات العلمية</a></li>
+                                                <li><a href="about-us.html">من نحن</a></li>
+                                                <li><a href="faqs.html">الاسئلة الشائعة</a></li>
+                                                <li><a href="contact-us.html">تواصل معنا</a></li>
+                                                <li><a href="privacy-policy.html">سياسة الخصوصية</a></li>
+                                                <li><a href="terms-and-use.html">الشروط والاستخدام</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-lower">
+                <div class="background-shapes">
+                    <div class="background-shape-item">
+                        <img src="assets/images/shapes/animate-shape-1.png" alt="line">
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="footer-lower-grid">
+                        <div class="footer-lower-item footer-lower-info">
+                            <div class="footer-copyright-text">
+                                <p>Copyright  @ <script>document.write(new Date().getFullYear())</script> Design &amp; Developed By <a href="https://hibootstrap.com/" target="_blank">SY</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Eend footer -->
+
+        <!-- Login Popup -->
+        <div id="login-popup" class="mfp-hide col-sm-8 col-md-6 col-xxl-4 pb-30 mx-auto p-relative">
+            <div class="authentication-item">
+                <h3>تسجيل الدخول</h3>
+                <div class="authentication-form">
+                    <form>
+                        <div class="form-group mb-20">
+                            <div class="input-group">
+                                <input type="text" name="user" class="form-control" required="" placeholder="البريد الالكترونى*">
+                            </div>
+                        </div>
+                        <div class="form-group mb-20">
+                            <div class="input-group">
+                                <input type="password" name="email" class="form-control" required="" placeholder="كلمة السر*">
+                            </div>
+                        </div>
+                        <div class="authentication-account-access mb-20">
+                            <div class="authentication-account-access-item">
+                                <div class="input-checkbox">
+                                    <input type="checkbox" id="check1">
+                                    <label for="check1">تذكرنى!</label>
+                                </div>
+                            </div>
+                            <div class="authentication-account-access-item">
+                                <div class="authentication-link">
+                                    <a href="forget-password.html">نسيت كلمة السر؟</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="btn main-btn">تسجيل الدخول</button>
+                        </div>
+                        <div class="authentication-account-access-item">
+                            <div class="authentication-link">
+                                <span class="ml-10">أو</span> <a href="#register-popup" class="open-popup2">إنشاء حساب جديد</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Login Popup -->
+        
+        <!-- Register Popup -->
+        <div id="register-popup" class="mfp-hide col-sm-8 col-md-6 col-xxl-4 pb-30 mx-auto p-relative">
+                <div class="authentication-item register">
+                    <h3>إنشاء حساب جديد</h3>
+                    <div class="authentication-form">
+                        <form>
+                            <div class="row">
+                                <div class="form-group mb-20">
+                                    <div class="input-group">
+                                        <input type="text" name="name" class="form-control" required="" placeholder="الاسم*">
+                                    </div>
+                                </div>
+                                <div class="form-group mb-20">
+                                    <div class="group-select">
+                                        <div class="nice-select" tabindex="0"><span class="current">الجنسية*</span>
+                                            <ul class="list nationality"> 
+                                                <li class="option selected focus">الجنسية</li>                                                         
+                                                <li data-value="saudi" class="option">السعودية</li>                                                         
+                                                <li data-value="morocco" class="option">المغرب</li>                                                         
+                                                <li data-value="egypt" class="option">مصر</li>                                                         
+                                                <li data-value="qatar" class="option">قطر</li>                                                         
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group mb-20">
+                                    <div class="group-select">
+                                        <div class="nice-select" tabindex="0"><span class="current">المؤهل الدراسى الحاصل عليه*</span>
+                                            <ul class="list eduqualification"> 
+                                                <li class="option selected focus">المؤهل الدراسى الحاصل عليه</li>                                                         
+                                                <li data-value="Phd" class="option">الدكتوراه</li>                                                         
+                                                <li data-value="ma" class="option">الماجستير</li>                                                         
+                                                <li data-value="ba" class="option">البكالوريوس</li>                                                         
+                                                <li data-value="bs" class="option">الليسانس</li>                                                         
+                                                <li data-value="highschool" class="option">الثانوية</li>                                                         
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group mb-20">
+                                    <div class="group-select">
+                                        <div class="nice-select" tabindex="0"><span class="current">التخصص المطلوب التسجيل فيه*</span>
+                                            <ul class="list major"> 
+                                                <li class="option selected focus">التخصص المطلوب التسجيل فيه</li>                                                         
+                                                <li data-value="1" class="option">الدكتوراه في العقيدة والتوحيد</li>                                                         
+                                                <li data-value="2" class="option">الدكتوراه في اللغة العربية</li>                                                         
+                                                <li data-value="3" class="option">الماجستير في القانون العام</li>                                                         
+                                                <li data-value="4" class="option">البكالوريوسفي إدارة الأعمال</li>                                                         
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6">
+                                    <div class="group-select mb-20">
+                                        <div class="nice-select" tabindex="0"><span class="current">كود الدولة*</span>
+                                            <ul class="list country-code"> 
+                                                <li class="option selected focus">كود الدولة</li>                                                         
+                                                <li data-value="+20" class="option">مصر (+20)</li>                                                         
+                                                <li data-value="+966" class="option">السعودية (+966)</li>                                                         
+                                                <li data-value="+971" class="option">الإمارات (+971)</li>                                                         
+                                                <li data-value="+1" class="option">الولايات المتحدة (+1)</li>                                                         
+                                                <li data-value="+44" class="option">المملكة المتحدة (+44)</li>                                                         
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6">
+                                    <div class="form-group mb-20">
+                                        <div class="input-group">
+                                            <input type="text" name="phone" class="form-control" required="" placeholder="رقم الهاتف*">
+                                        </div>        
+                                    </div>
+                                </div>
+                                <div class="form-group mb-20">
+                                    <div class="input-group">
+                                        <input type="text" name="email" class="form-control" required="" placeholder="البريد الالكترونى*">
+                                    </div>
+                                </div>
+                                <div class="form-group mb-20">
+                                    <div class="input-group">
+                                        <input type="password" name="email" class="form-control" required="" placeholder="كلمة المرور*">
+                                    </div>
+                                </div>
+                                <div class="form-group mb-20">
+                                    <div class="input-group">
+                                        <input type="password" name="email" class="form-control" required="" placeholder="تأكيد كلمة المرور*">
+                                    </div>
+                                </div>
+                                <div class="authentication-account-access mb-20">
+                                    <div class="authentication-account-access-item">
+                                        <div class="input-checkbox">
+                                            <input type="checkbox" id="check2">
+                                            <label for="check2">أوافق على <a href="privacy-policy">سياسة الشروط والأحكام</a></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button class="btn main-btn mb-20">التسجيل الان</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+        </div>
+        <!-- Register Popup -->
+        <!-- scroll-top -->
+        <div class="scroll-top" id="scrolltop">
+            <div class="scroll-top-inner">
+                <span><i class="flaticon-up-arrow"></i></span>
+            </div>
+        </div>
+        <!-- End scroll-top -->
+
+        <!-- essential js -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <!-- magnific popup js -->
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <!-- nice-select js -->
+        <script src="assets/js/jquery.nice-select.min.js"></script>
+        <!-- swiper js -->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+        <!-- counter js -->
+        <script src="assets/js/jquery.waypoints.min.js"></script>
+        <script src="assets/js/jquery.counterup.min.js"></script>
+        <!-- fullcalender js -->
+        <script src="assets/js/moment.js"></script>
+        <script src="assets/js/main.min.js"></script>
+        <script src="assets/js/jquery-ui.js"></script>
+        <!-- isotope js -->
+        <script src="assets/js/isotope.pkgd.min.js"></script>
+        <!-- revolution slider js -->
+        <script src="assets/js/jquery.themepunch.revolution.min.js"></script>
+        <script src="assets/js/jquery.themepunch.tools.min.js"></script>
+        <!-- slider revolution extension scripts. only needed for local testing -->
+        <script src="assets/js/extensions/revolution.extension.actions.min.js"></script>
+        <script src="assets/js/extensions/revolution.extension.carousel.min.js"></script>
+        <script src="assets/js/extensions/revolution.extension.kenburn.min.js"></script>
+        <script src="assets/js/extensions/revolution.extension.layeranimation.min.js"></script>
+        <script src="assets/js/extensions/revolution.extension.migration.min.js"></script>
+        <script src="assets/js/extensions/revolution.extension.navigation.min.js"></script>
+        <script src="assets/js/extensions/revolution.extension.parallax.min.js"></script>
+        <script src="assets/js/extensions/revolution.extension.slideanims.min.js"></script>
+        <script src="assets/js/extensions/revolution.extension.video.min.js"></script>
+        <!-- form ajazchimp js -->
+        <script src="assets/js/jquery.ajaxchimp.min.js"></script>
+        <!-- form validator js  -->
+        <script src="assets/js/form-validator.min.js"></script>
+        <!-- contact form js -->
+        <script src="assets/js/contact-form-script.js"></script>
+        <!-- meanmenu js -->
+        <script src="assets/js/jquery.meanmenu.min.js"></script>
+        <!-- main js -->
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>
