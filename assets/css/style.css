@@ -4564,6 +4564,11 @@ button:focus, button:active {
   height: -moz-fit-content;
   height: fit-content;
 }
+@media only screen and (max-width : 767px) {
+  .courses-section .course-flat-card .course-card-thumb img {
+    height: auto;
+  }
+}
 @media only screen and (max-width : 575px) {
   .courses-section .course-flat-card .course-card-thumb {
     width: 80%;

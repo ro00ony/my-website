@@ -4070,6 +4070,11 @@ button {
             img {
                 height: fit-content;
             }
+            @media #{$to-767} {
+                & img {
+                    height: auto;
+                }
+            }
             @media #{$to-575} {
                 & {
                     width: 80%;
