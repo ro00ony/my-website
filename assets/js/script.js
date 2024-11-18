@@ -152,8 +152,7 @@ jQuery(function ($) {
             clickable: true
         },
     });
-    // Ads Slider 
-        // Ads Slider  
+    // Ads Slider  
     $(function() {
         var swiper = new Swiper('.ads-hero', {
             slidesPerView: 1,

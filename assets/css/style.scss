@@ -2724,8 +2724,6 @@ button {
     // background-size: cover;
     // background-position: bottom;
     .ads-content .content img {
-        width: 100%;
-        height: 100%;
         object-fit: cover;
     }
     @media #{$to-991} {
@@ -2734,6 +2732,9 @@ button {
             padding-bottom: 30px;
             .header-content {
                 padding-bottom: 30px;
+            }
+            .ads-hero {
+                width: 80%;
             }
         }
     }
