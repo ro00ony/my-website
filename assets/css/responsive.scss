@@ -975,6 +975,9 @@ $box-shadow: 0px 11px 61.1px 3.9px rgba(34, 34, 34, 0.09);
     .mylearn-card {
         text-align: center;
     }
+    .main-btn.medium {
+        padding: 12px 35px;
+    }
 }
 // to 767: max-767
 @media #{$to-767} {
@@ -1002,6 +1005,9 @@ $box-shadow: 0px 11px 61.1px 3.9px rgba(34, 34, 34, 0.09);
         font-size: 12px;
         i {
             font-size: 12px;
+        }
+        &.medium {
+            padding: 10px 35px;
         }
     }
     .main-btn-2 {

@@ -852,6 +852,9 @@
   .mylearn-card {
     text-align: center;
   }
+  .main-btn.medium {
+    padding: 12px 35px;
+  }
 }
 @media only screen and (max-width : 767px) {
   .pt-200 {
@@ -879,6 +882,9 @@
   }
   .main-btn i {
     font-size: 12px;
+  }
+  .main-btn.medium {
+    padding: 10px 35px;
   }
   .main-btn-2 {
     padding: 7px 7px 7px 15px;

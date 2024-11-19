@@ -186,11 +186,6 @@ a.redirect-link i {
   right: 0;
 }
 
-.bg-top-shape {
-  left: auto;
-  right: 0;
-}
-
 .bg-bottom-shape {
   left: auto;
   right: 0;
@@ -1601,11 +1596,6 @@ a.redirect-link i {
 
 .buy-now-btn {
   left: 20px;
-  right: auto;
-}
-
-.switch-box {
-  left: 120px;
   right: auto;
 }
 

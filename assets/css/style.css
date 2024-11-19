@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*------------------------------------------------------------------
 [Table of contents]
-@File: Jexi Template Style
+@File: Islamic-Uni Template Style
 [ Default Index Number ]
 - Defult css with Helper css
     -- Before this comment ( Start Main CSS Style ) defult css continue .
@@ -659,6 +659,10 @@ a.redirect-link i {
   color: #071e2e;
 }
 
+.main-color {
+  color: #009e36 !important;
+}
+
 .fw-400 {
   font-weight: 400;
 }
@@ -782,6 +786,9 @@ button:focus, button:active {
 .main-btn.radius {
   padding: 12px 15px;
 }
+.main-btn.medium {
+  padding: 15px 40px;
+}
 .main-btn i {
   margin-left: 10px;
   font-size: 15px;
@@ -845,10 +852,14 @@ button:focus, button:active {
   background: #295939;
 }
 .main-btn.btn-thirdcolor {
-  background-color: #fff;
+  color: #009e36;
+  background: #fff;
+}
+.main-btn.btn-thirdcolor:hover {
+  color: #fff;
 }
 .main-btn.btn-thirdcolor:after {
-  background-color: #588157;
+  background: #009e36;
 }
 .main-btn.btn-red {
   background-color: #be3137;
@@ -1073,18 +1084,6 @@ button:focus, button:active {
   background: linear-gradient(to right, #295939, #009e36);
 }
 
-.bg-top-shape {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  bottom: 100%;
-  -webkit-transform: translateY(55%);
-          transform: translateY(55%);
-}
-.bg-top-shape img {
-  width: 100%;
-}
-
 .bg-bottom-shape {
   position: absolute;
   width: 100%;
@@ -1241,18 +1240,6 @@ button:focus, button:active {
 }
 .section-title.section-title-lg {
   max-width: 790px;
-}
-.section-title.section-title-green h2 {
-  color: #009e36;
-}
-.section-title.section-title-green h2:before {
-  background-image: url(../images/shapes/section-title-shape-white.png);
-}
-.section-title.section-title-green p {
-  color: #fff;
-}
-.section-title.section-title-green p a {
-  color: #fff;
 }
 .section-title.section-title-white h2 {
   color: #fff;
@@ -3646,27 +3633,6 @@ button:focus, button:active {
   }
 }
 
-.shape-line-bg {
-  background-image: url(../images/curved-line.png);
-  background-repeat: no-repeat;
-  background-position: left top;
-  position: relative;
-  overflow: hidden;
-}
-.shape-line-bg:before {
-  content: "";
-  position: absolute;
-  right: 0;
-  top: 0;
-  -webkit-transform: translateY(-190px);
-          transform: translateY(-190px);
-  width: 315px;
-  height: 285px;
-  background-image: url(../images/half-circle-shape.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
 @-webkit-keyframes scaleIcon {
   0% {
     -webkit-transform: scale(1);
@@ -4838,11 +4804,6 @@ button:focus, button:active {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-@media only screen and (max-width : 767px) {
-  .reviews .new-comment {
-    padding: 0;
-  }
-}
 .reviews .new-comment .titles {
   margin-bottom: 12px;
   padding-bottom: 12px;
@@ -4910,6 +4871,19 @@ button:focus, button:active {
 }
 .reviews .new-comment .comments .rate-form .review-star .review.active {
   color: #ff9000;
+}
+@media only screen and (max-width : 767px) {
+  .reviews .new-comment {
+    padding: 0;
+  }
+  .reviews .new-comment .comments .rate-form .inner-2 {
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width : 575px) {
+  .reviews {
+    padding: 30px 10px 30px;
+  }
 }
 
 .summery-details-item .product-tab-list {
@@ -11586,23 +11560,6 @@ blockquote.blockquote-thirdcolor .blockquote-inner:before {
 }
 .image-frame.image-frame-2:before {
   background-image: url(../images/shapes/frame-1.png);
-}
-
-.testimonial-thumb-frame {
-  position: relative;
-}
-.testimonial-thumb-frame:before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-image: url(../images/shapes/frame-small-1.png);
-  background-size: 100% 100%;
-}
-.testimonial-thumb-frame.testimonial-thumb-frame-2:before {
-  background-image: url(../images/shapes/frame-small-2.png);
 }
 
 .error-page-content {
