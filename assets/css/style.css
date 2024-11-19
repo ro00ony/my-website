@@ -3614,6 +3614,9 @@ button:focus, button:active {
   border-bottom: 0;
   border-radius: 0 0 10px 10px;
 }
+.notifications .content .notification-item.new {
+  background-color: rgba(0, 158, 54, 0.5019607843);
+}
 .notifications .content .notification-item .notification-message {
   font-size: 16px;
   color: #2c3e50;

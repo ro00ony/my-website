@@ -3213,6 +3213,9 @@ button {
                 border-bottom: 0;
                 border-radius: 0 0 10px 10px;
             }
+            &.new {
+                background-color: #009e3680;
+            }
             .notification-message {
                 font-size: 16px;
                 color: #2c3e50;
