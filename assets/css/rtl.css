@@ -1269,11 +1269,11 @@ a.redirect-link i {
   margin-left: 0;
 }
 
-.profile-dashboard-tab li {
+.chapters-tab li {
   margin-right: 0;
   margin-left: 20px;
 }
-.profile-dashboard-tab li:last-child {
+.chapters-tab li:last-child {
   margin-left: 0;
 }
 

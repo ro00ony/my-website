@@ -554,12 +554,19 @@ jQuery(function ($) {
         $(".profile-information-details-item[data-profile-information-details=" +tab_modal+ "]").addClass("active").siblings().removeClass("active");
     })
 
-    // Profile-dashboard
-    $(".profile-dashboard-tab li").click(function() {
-        var tab_modal = $(this).attr("data-profile-dashboard-tab");
+    // Chapters In Course Details
+    $(".chapters-tab li").click(function() {
+        var tab_modal = $(this).attr("data-chapters-tab");
         $(this).addClass("active").siblings().removeClass("active");
-        $(".profile-dashboard-details-item[data-profile-dashboard-details=" +tab_modal+ "]").addClass("active").siblings().removeClass("active");
+        $(".chapters-details-item[data-chapters-details=" +tab_modal+ "]").addClass("active").siblings().removeClass("active");
     })
+    // Collapse Classrooms 
+    $(document).ready(function () {
+        $('.collapse-btn-materials').on('click', function () {
+            $(this).toggleClass('active'); 
+            $(this).next('.collapse-content-materials').slideToggle(); 
+        });
+    });    
 
     // Event-speaker-carousel
     var swiper = new Swiper('.event-speaker-carousel', {
@@ -718,7 +725,6 @@ jQuery(function ($) {
     
     // Show Or Hide Sale
     $(document).ready(function() {
-        // تحقق من وجود كلاس 'sale'
         $('.course-filter-list').each(function() {
             if ($(this).find('.sale').length) {
                 $(this).show(); 
@@ -728,7 +734,7 @@ jQuery(function ($) {
         });
     });
     
-    // Uploud Images 
+    // Uploud Images In Checkout Details  
     $(document).ready(function() {
         $(".file-input").on("change", function() {
             const uploadedImgs = $(".uploaded-imgs");
@@ -812,16 +818,28 @@ jQuery(function ($) {
         });
     });
 
+    // Collapse Chapters 
+    $(document).ready(function () {
+        $('.collapse-btn').on('click', function () {
+            $(this).toggleClass('active'); 
+            $(this).next('.collapse-content').slideToggle(); 
+        });
+        
+        const $firstChapter = $('#menu-items-1').prev('.collapse-btn'); 
+        $firstChapter.addClass('active'); 
+        $('#menu-items-1').slideDown(); 
+    });    
+    
     // Show Content For Each Subject 
     $(document).ready(function () {
         let currentContent = 'videos'; 
-        let currentSubject = '#content-item-1'; 
+        let currentSubject = '#content-item-1-1'; // المادة الأولى من الفصل الأول تلقائيًا
     
         function updateContent() {
             $('.content-item').hide(); 
             $(currentSubject).show(); 
             
-            // إخفاء جميع العناصر الفرعية داخل الموضوع
+            // إخفاء جميع العناصر الفرعية داخل المادة
             $(currentSubject).find('.videos-content, .books-content, .links-content, .questions-content').hide();
             // إظهار المحتوى المحدد فقط
             $(currentSubject + ' .' + currentContent + '-content').show();
@@ -836,13 +854,25 @@ jQuery(function ($) {
             $('#' + contentId).addClass('active');
         }
     
-        $('#menu-items .menu-item a').click(function (event) {
+        // فتح الفصل الأول وعرض المادة الأولى تلقائيًا عند تحميل الصفحة
+        $('#menu-items-1').slideDown(); // فتح الفصل الأول تلقائيًا
+        $('#menu-items-1 .menu-item:first').addClass('active'); // تفعيل المادة الأولى
+        updateContent(); // عرض محتوى المادة الأولى تلقائيًا
+    
+        // التعامل مع النقر على المواد داخل الفصول
+        $('.menu .menu-item a').click(function (event) {
             event.preventDefault(); 
-            currentSubject = '#content-item-' + ($(this).parent().index() + 1);
+    
+            // تحديد الفصل والمادة الحالية بناءً على العنصر النشط
+            const $currentChapter = $(this).closest('.menu'); // القوائم الفرعية
+            const chapterIndex = $currentChapter.attr('id').split('-')[2]; // استخراج رقم الفصل
+            const subjectIndex = $(this).parent().index() + 1; // رقم المادة داخل الفصل
+    
+            currentSubject = `#content-item-${chapterIndex}-${subjectIndex}`; // تحديث معرف المادة
             updateContent();
-            
+    
             // تحديث الفئة النشطة في القائمة
-            $('#menu-items .menu-item').removeClass('active');
+            $('.menu .menu-item').removeClass('active');
             $(this).parent().addClass('active');
         });
     
@@ -920,7 +950,6 @@ jQuery(function ($) {
             }
         });
     });
-
     // Show written And Oral Exam Content  
     $(document).ready(function () {
         // written Exam 
@@ -990,7 +1019,6 @@ jQuery(function ($) {
             $examContent.find('.submit .btn').text('إنهاء').addClass('mt-20');
         });
     });
-    
     // Show Rate Popup
     $(document).ready(function() {
         $('.rate-button').click(function() {
@@ -1001,8 +1029,7 @@ jQuery(function ($) {
             $('.course-details .reviews').hide(); 
         });
     });
-    
-    
+
     // delete account Pop 
     $(document).ready(function() {
         $('#deleteBtn').click(function() {
