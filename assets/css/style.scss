@@ -4947,6 +4947,7 @@ button {
             padding: 10px;
             text-align: right;
             background-color: $off-white;
+            color: $black;
             margin-bottom: 20px;
             border-radius: $second-rad;
             &::before {
@@ -9889,6 +9890,7 @@ blockquote {
     }
 }
 
+
 // Course Content 
 .course-details {
     .semi_menu {
@@ -9909,6 +9911,7 @@ blockquote {
             list-style: none;
             li .collapse-btn {
                 background-color: #ffffff;
+                color: $black;
                 padding: 10px 15px;
                 cursor: pointer;
                 font-size: 17px;

@@ -5485,6 +5485,7 @@ button:focus, button:active {
   padding: 10px;
   text-align: right;
   background-color: #f8f8f8;
+  color: #000;
   margin-bottom: 20px;
   border-radius: 5px;
 }
@@ -10910,6 +10911,7 @@ blockquote.blockquote-thirdcolor .blockquote-inner:before {
 }
 .course-details .semi_menu .chapters li .collapse-btn {
   background-color: #ffffff;
+  color: #000;
   padding: 10px 15px;
   cursor: pointer;
   font-size: 17px;

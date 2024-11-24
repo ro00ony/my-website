@@ -734,62 +734,69 @@ jQuery(function ($) {
         });
     });
     
-    // Uploud Images In Checkout Details  
+    // Uploud Images In Checkout Details 
     $(document).ready(function() {
         $(".file-input").on("change", function() {
             const uploadedImgs = $(".uploaded-imgs");
             let firstImageUploaded = false;
-
+            const inputField = $(this); 
+            
             if (this.files && this.files[0]) {
                 const reader = new FileReader();
                 reader.onload = function(e) {
                     const imgContainer = $("<div>").addClass("uploaded-img-container");
                     const img = $("<img>").attr("src", e.target.result);
                     const deleteIcon = $("<button>").addClass("delete-icon").html("&times;");
-
+                    
                     deleteIcon.on("click", function() {
-                        imgContainer.remove();
+                        imgContainer.remove(); 
+                        inputField.val(''); 
                         if (uploadedImgs.children().length === 0) {
-                            firstImageUploaded = false; 
-                            $(".line").hide(); 
+                            firstImageUploaded = false;
+                            $(".line").hide();
                         }
                     });
 
                     imgContainer.append(img).append(deleteIcon);
                     uploadedImgs.append(imgContainer);
-
+                    
                     if (!firstImageUploaded) {
-                        $(".line").show(); 
-                        firstImageUploaded = true; 
+                        $(".line").show();
+                        firstImageUploaded = true;
                     }
                 };
                 reader.readAsDataURL(this.files[0]);
             }
         });
     });
+    
     // Upload Single img 
     $(document).ready(function() {
-            $("input[type='file']").on("change", function() {
-                const uploadedImgs = $(this).siblings("div");
-
-                if (this.files && this.files[0]) {
-                    const reader = new FileReader();
-                    reader.onload = function(e) {
-                        const imgContainer = $("<div>").addClass("uploaded-img-container");
-                        const img = $("<img>").attr("src", e.target.result);
-                        const deleteIcon = $("<button>").addClass("delete-icon").html("&times;");
-                    
-                        deleteIcon.on("click", function() {
-                            imgContainer.remove();
-                        });
-
-                        imgContainer.append(img).append(deleteIcon);
-                        uploadedImgs.append(imgContainer);
-                    };
-                    reader.readAsDataURL(this.files[0]);
-                }
-            });
+        $("input[type='file']").on("change", function() {
+            const uploadedImgs = $(this).siblings("div");
+            const inputField = $(this); // حفظ الحقل المرتبط بالصورة المرفوعة
+    
+            if (this.files && this.files[0]) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    const imgContainer = $("<div>").addClass("uploaded-img-container");
+                    const img = $("<img>").attr("src", e.target.result);
+                    const deleteIcon = $("<button>").addClass("delete-icon").html("&times;");
+    
+                    // عند الضغط على زر الحذف
+                    deleteIcon.on("click", function() {
+                        imgContainer.remove(); // إزالة الصورة المعروضة
+                        inputField.val(''); // مسح اسم الصورة فقط في الحقل المرتبط بالصورة المحذوفة
+                    });
+    
+                    imgContainer.append(img).append(deleteIcon);
+                    uploadedImgs.append(imgContainer);
+                };
+                reader.readAsDataURL(this.files[0]);
+            }
+        });
     });
+    
     
     // show Payment Methods
     $(document).ready(function() {
@@ -818,6 +825,7 @@ jQuery(function ($) {
         });
     });
 
+    // Course Content 
     // Collapse Chapters 
     $(document).ready(function () {
         $('.collapse-btn').on('click', function () {
@@ -830,126 +838,96 @@ jQuery(function ($) {
         $('#menu-items-1').slideDown(); 
     });    
     
-    // Show Content For Each Subject 
+    // Show Content And Question Tabs For Each Material
     $(document).ready(function () {
         let currentContent = 'videos'; 
-        let currentSubject = '#content-item-1-1'; // المادة الأولى من الفصل الأول تلقائيًا
-    
+        let currentSubject = '#content-item-1-1'; 
+        let currentTabIndex = {}; 
+        
         function updateContent() {
             $('.content-item').hide(); 
             $(currentSubject).show(); 
             
-            // إخفاء جميع العناصر الفرعية داخل المادة
             $(currentSubject).find('.videos-content, .books-content, .links-content, .questions-content').hide();
-            // إظهار المحتوى المحدد فقط
             $(currentSubject + ' .' + currentContent + '-content').show();
+
+            if (currentContent === 'questions') {
+                const currentTab = currentTabIndex[currentSubject] || 1; 
+                showQuestionTab(currentSubject, currentTab);
+            }
         }
-    
-        function setActiveContent(contentId) {
-            currentContent = contentId;
-            updateContent();
-    
-            // إزالة الفئة النشطة من كل الأزرار، ثم إضافة الفئة النشطة للزر الحالي فقط
-            $('#videos, #books, #links, #questions').removeClass('active');
-            $('#' + contentId).addClass('active');
+        
+        function showQuestionTab(subjectId, tabIndex) {
+            const $questionContent = $(subjectId + ' .questions-content');
+            $questionContent.find('.tab-content').hide(); 
+            $questionContent.find(`.tab-content[data-tab="${tabIndex}"]`).show(); 
+            
+            if (tabIndex === 1) {
+                $questionContent.find('.prev-tab').hide();
+            } else {
+                $questionContent.find('.prev-tab').show();
+            }
+            
+            const totalTabs = $questionContent.find('.tab-content').length;
+            if (tabIndex >= totalTabs) {
+                $questionContent.find('.next-tab').hide();
+            } else {
+                $questionContent.find('.next-tab').show();
+            }
+            
+            $questionContent.find('.tab-info .current-tab').text(tabIndex);
+            $questionContent.find('.tab-info .total-tabs').text(totalTabs);
+            currentTabIndex[subjectId] = tabIndex;
         }
-    
-        // فتح الفصل الأول وعرض المادة الأولى تلقائيًا عند تحميل الصفحة
-        $('#menu-items-1').slideDown(); // فتح الفصل الأول تلقائيًا
-        $('#menu-items-1 .menu-item:first').addClass('active'); // تفعيل المادة الأولى
-        updateContent(); // عرض محتوى المادة الأولى تلقائيًا
-    
-        // التعامل مع النقر على المواد داخل الفصول
+        
+        $('#menu-items-1').slideDown(); 
+        $('#menu-items-1 .menu-item:first').addClass('active'); 
+        updateContent(); 
+        
         $('.menu .menu-item a').click(function (event) {
             event.preventDefault(); 
-    
-            // تحديد الفصل والمادة الحالية بناءً على العنصر النشط
-            const $currentChapter = $(this).closest('.menu'); // القوائم الفرعية
-            const chapterIndex = $currentChapter.attr('id').split('-')[2]; // استخراج رقم الفصل
-            const subjectIndex = $(this).parent().index() + 1; // رقم المادة داخل الفصل
-    
-            currentSubject = `#content-item-${chapterIndex}-${subjectIndex}`; // تحديث معرف المادة
+            
+            const $currentChapter = $(this).closest('.menu'); 
+            const chapterIndex = $currentChapter.attr('id').split('-')[2]; 
+            const subjectIndex = $(this).parent().index() + 1; 
+            
+            currentSubject = `#content-item-${chapterIndex}-${subjectIndex}`;
+            currentTabIndex[currentSubject] = 1; 
             updateContent();
-    
-            // تحديث الفئة النشطة في القائمة
+            
             $('.menu .menu-item').removeClass('active');
             $(this).parent().addClass('active');
         });
-    
-        // تعيين محتوى نشط عند النقر على الأزرار
+        
         $('#videos, #books, #links, #questions').click(function () {
-            setActiveContent(this.id);
+            currentContent = this.id;
+            updateContent();
+            
+            $('#videos, #books, #links, #questions').removeClass('active');
+            $(this).addClass('active');
         });
-    
-        // تفعيل الزر الافتراضي عند التحميل
-        setActiveContent('videos');
-    });
-    
-    // Show Tabs In Questions Content
-    $(document).ready(function () {
-        let currentTabIndex = 1;
-        let currentSubjectIndex = 1;
-    
-        function showTab(subjectIndex, tabIndex) {
-            // إخفاء جميع التابات الخاصة بالمادة المحددة
-            $(`.questions-content[data-subject="${subjectIndex}"] .tab-content`).hide();
-    
-            // عرض التاب المحددة فقط للمادة الحالية
-            const currentTab = $(`.questions-content[data-subject="${subjectIndex}"] .tab-content[data-tab="${tabIndex}"]`);
-            currentTab.show();
-    
-            // ضبط الـ start-counter بناءً على التاب الحالية
-            const startCounter = (tabIndex - 1) * 5;
-            $(`.questions-content[data-subject="${subjectIndex}"]`).css('--start-counter', startCounter);
-    
-            // إدارة إظهار وإخفاء أزرار التنقل بناءً على موقع التاب الحالي
-            if (tabIndex === 1) {
-                $('.prev-tab').hide();
-            } else {
-                $('.prev-tab').show();
-            }
-    
-            const totalTabs = $(`.questions-content[data-subject="${subjectIndex}"] .tab-content`).length;
-            if (tabIndex >= totalTabs) {
-                $('.next-tab').hide();
-            } else {
-                $('.next-tab').show();
-            }
-    
-            // عرض العدد الحالي للتابات
-            $('.tab-info .current-tab').text(tabIndex);
-            $('.tab-info .total-tabs').text(totalTabs);
-        }
-    
-        // عند الضغط على مادة جديدة
-        $('#menu-items .menu-item a').click(function (event) {
-            event.preventDefault();
-    
-            currentSubjectIndex = $(this).parent().index() + 1; // تحديث فهرس المادة
-            currentTabIndex = 1; // إعادة ضبط التاب للمادة الجديدة
-            showTab(currentSubjectIndex, currentTabIndex);
-    
-            $('#menu-items .menu-item').removeClass('active');
-            $(this).parent().addClass('active');
-        });
-    
-        // زر "التالي" للتنقل بين التابات
+        
         $('.next-tab').click(function () {
-            const totalTabs = $(`.questions-content[data-subject="${currentSubjectIndex}"] .tab-content`).length;
-            if (currentTabIndex < totalTabs) {
-                currentTabIndex++;
-                showTab(currentSubjectIndex, currentTabIndex);
+            const totalTabs = $(currentSubject + ' .questions-content .tab-content').length;
+            const currentTab = currentTabIndex[currentSubject] || 1;
+            
+            if (currentTab < totalTabs) {
+                showQuestionTab(currentSubject, currentTab + 1);
             }
         });
-    
-        // زر "السابق" للتنقل بين التابات
+        
         $('.prev-tab').click(function () {
-            if (currentTabIndex > 1) {
-                currentTabIndex--;
-                showTab(currentSubjectIndex, currentTabIndex);
+            const currentTab = currentTabIndex[currentSubject] || 1;
+            
+            if (currentTab > 1) {
+                showQuestionTab(currentSubject, currentTab - 1);
             }
         });
+        
+        currentContent = 'videos';
+        updateContent();
     });
+
     // Show written And Oral Exam Content  
     $(document).ready(function () {
         // written Exam 
@@ -1019,6 +997,7 @@ jQuery(function ($) {
             $examContent.find('.submit .btn').text('إنهاء').addClass('mt-20');
         });
     });
+
     // Show Rate Popup
     $(document).ready(function() {
         $('.rate-button').click(function() {
@@ -1029,7 +1008,9 @@ jQuery(function ($) {
             $('.course-details .reviews').hide(); 
         });
     });
-
+    // End Course Content
+    
+    
     // delete account Pop 
     $(document).ready(function() {
         $('#deleteBtn').click(function() {
